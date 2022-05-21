@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background-color: #14253d;
+  width: 350px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), 0 5px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), 0 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card .image-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card .image-container .main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card .image-container .overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 255, 247, 0.4);
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.card .image-container .overlay .eye-icon {
+  width: 10%;
+}
+
+.card .image-container:hover .overlay {
+  opacity: 1;
+}
+
+.card h2 {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.card h2:hover {
+  color: #00fff7;
+}
+
+.card p {
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.card .price-time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.card .price-time .price {
+  color: #00fff7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.card .price-time .time {
+  color: #8bacda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.card .line-break {
+  width: 100%;
+  height: 1px;
+  background-color: #2f415b;
+  margin-bottom: 1rem;
+}
+
+.card .author {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.card .author img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.card .author p {
+  color: #8bacda;
+}
+
+.card .author .creator {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.card .author .creator:hover {
+  color: #00fff7;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
