@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [NFT preview card component solution]()
-- Live Site URL: [Live Site]()
+- Solution URL: [NFT preview card component solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-E3GJ87zEM4)
+- Live Site URL: [Live Site](https://pooria98.github.io/NFT-preview-card-component/)
 
 ### Built with
 
